@@ -1,0 +1,351 @@
+h2{
+	margin-left: 20%;
+	font-family: arial;
+}
+
+h3{
+	margin-left: 34%;
+	font-family: arial;
+}
+
+h1{
+	margin-left: 35%;
+	font-family: arial;
+}
+
+h4{
+	margin-left: 3%;
+	font-family: arial;
+}
+
+button{
+	margin-left: 30%;
+	margin: 6px;
+	font-family: arial;
+}
+
+#button_rel{
+	margin-left: -24% ;
+	margin-top: 2%;
+}
+
+a{
+	margin: 6px;
+}
+
+#table_login{
+	border: 1px solid;
+	margin-top: 15%;	
+	margin-left: 43%;
+}
+
+#title{
+	text-align: center;
+	margin-right: 160px;
+}
+
+#cabecalho{
+	width: auto;
+	height: 9%;
+	border: 2px solid;
+	color: black;
+	background-color: red;
+	
+}
+
+#rodape{
+	border: 1px solid;
+	margin-top: 0%;
+	width: auto;
+	height: 8%;
+	position: static;
+}
+
+#table_cabecalho{
+	width: 100%;
+}
+
+#logout{
+	margin-top: 2%;
+	margin-left: 30%;
+}
+
+
+#imagem{
+	width: 185px;
+	height: 69px;
+	background-image: url("../images/peccin.png");
+	
+}
+
+#imageAlert{
+	margin-left: 40%;
+	width: 400px;
+	height: 250px;
+	background-image: url("../images/alert.gif");	
+}
+
+.imagemDeFundo{
+    background: url('../images/logo-login.png') no-repeat; 
+    width: auto;
+	height: 400px;
+	margin-top: 10px;
+	margin-left: 37%;
+}
+
+#corpo_index{
+	width: 100%;
+	height: 88%;
+	overflow: scroll;
+	font-family: arial;	
+}
+
+#confirmaExclusao{
+	position: relative;
+	text-align: center;
+	margin-top: 8%;
+}
+
+#corpo{
+	width: auto;
+	height: 80%;
+}
+
+#form{	
+	width: auto;
+	height: auto;
+	margin-top: 0%;
+	margin-left: 15%;
+	position: relative;	
+	min-width: 60%;
+	overflow-x: hidden;
+}
+
+
+#form-relatorios{	
+	width: auto;
+	height: auto;
+	margin-top: 0%;
+	margin-left: 14%;
+	position: static;	
+}
+
+#upload{
+	margin-left: 0%;
+}
+
+#form_linhas{
+	margin-left: 20%;
+}
+
+#formulario_linhas{
+	position: relative;
+}
+
+#table_itens_index{	
+	width: auto;
+	height: 85%;
+	margin-left: 15%;
+	margin-top: 0%;
+	position: relative;
+}
+
+#table_itens{	
+	width: auto;
+	height: 85%;
+	margin-left: 15%;
+	margin-top: -37.4%;
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#buttons{
+	margin-right: 40%;
+}
+
+
+#nav_bar{
+	border: 2px solid;
+	width: 14%;
+	height: auto;
+	position: fixed;
+	margin-top: 0.2%;
+
+}
+
+#pesquisar{
+	margin-left: 80%;
+	margin-top: 0.1%;
+}
+
+ul{
+	border: 1px solid	#FF0000;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+  
+li{
+	text-align: left;
+	border-bottom: 1px solid 	#FF0000;
+	font-family: arial;
+	font-size: medium;
+}
+
+ul li{
+	position: relative;
+}
+
+li ul {
+	position: relative;
+	left: 10px;
+	top: 0;
+	display: none;	
+}
+
+ul li a {
+	display: block;
+	text-decoration: none;
+	background: #fff;
+	padding: 8px;
+	border: 1px solid 	#FF0000;
+ }
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul li { float: left; }
+* html ul li a { height: 1%; }
+/* End */
+
+ 
+li:hover ul { 
+	display: block; 	
+}
+
+
+li a{
+	display: block;
+	color: black;
+}
+  
+li:last-child {
+	border-bottom: none;
+}
+
+.blue {
+	color: #303ED3;
+	font-size: 15;
+	font-style: italic;
+  }
+
+.size{
+	font-size: 13;
+	font-family: arial;
+}
+
+.red{
+	color: white;
+	background-color: red;
+}
+
+body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.card-container.card {
+    width: 350px;
+	padding: 40px 40px;
+	margin-top: -200px;
+}
+
+/*
+ * Card component
+ */
+.card {
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+	margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+	border-radius: 20px;
+	border-top-color: #A9A9A9;
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: #515050;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.borda1 {
+	width: 250px;
+    height: 350px;
+    background: #ffffff ;
+    color: #FFF;
+    padding: 20px;
+    border: 1px solid #C0C0C0;
+}
+
+
+
+
+
+
+
+
