@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+ini_set('default_charset', 'utf-8');
+
 include '../../config/conection.php';
 
 //Verificar se o usuário clicou no botão, clicou no botão acessa o IF e tenta cadastrar, caso contrario acessa o ELSE
@@ -12,11 +15,11 @@ if($SendEditCont){
     $memoria = filter_input(INPUT_POST, 'memoria', FILTER_SANITIZE_STRING);
     $processador = filter_input(INPUT_POST, 'processador', FILTER_SANITIZE_STRING);
     $status = filter_input(INPUT_POST, 'status', FILTER_SANITIZE_STRING);
-    $setor = filter_input(INPUT_POST, 'idsetor', FILTER_SANITIZE_STRING);
+    $setor = filter_input(INPUT_POST, 'id_setor', FILTER_SANITIZE_STRING);
 
     
     //Inserir no BD
-    $ativos = "UPDATE ativos SET usuarios_idusuarios = :usuarios_idusuarios, patrimonio = :patrimonio, memoria = :memoria, processador = :processador, status = :status, idsetor = :idsetor WHERE idativos= :id";
+    $ativos = "UPDATE ativos SET usuarios_idusuarios = :usuarios_idusuarios, patrimonio = :patrimonio, memoria = :memoria, processador = :processador, status = :status, id_setor = :id_setor WHERE idativos= :id";
     
     $stmt = $conn->prepare($ativos);
     $stmt->bindParam(':usuarios_idusuarios', $usuarios);
@@ -25,7 +28,7 @@ if($SendEditCont){
     $stmt->bindParam(':memoria', $memoria);
     $stmt->bindParam(':processador', $processador);
     $stmt->bindParam(':status', $status);
-    $stmt->bindParam(':idsetor', $setor);
+    $stmt->bindParam(':id_setor', $setor);
 
 
     $stmt->execute();

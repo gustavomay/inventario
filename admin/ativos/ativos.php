@@ -1,5 +1,8 @@
 <?php
 
+
+ini_set('default_charset', 'utf-8');
+
 require_once('../../config/conection.php');
 
 ?>
@@ -19,7 +22,7 @@ require_once('../../config/conection.php');
 
 <link href="../../css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="../../css/mobile.css" media="(max-width: 720px)">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width">
 
 <script>

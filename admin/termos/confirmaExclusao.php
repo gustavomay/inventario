@@ -18,6 +18,9 @@
 </html>
 
 <?php
+
+ini_set('default_charset', 'utf-8');
+
 include '../../config/conection.php';
 
 $id = $_POST['idusuarios'];

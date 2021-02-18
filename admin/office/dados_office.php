@@ -1,6 +1,9 @@
 <?php
 
 include '../../config/conection.php';
+
+ini_set('default_charset', 'utf-8');
+
 $consulta = $conn->query("SELECT * FROM office ORDER BY idoffice");
 ?>
 

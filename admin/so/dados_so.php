@@ -1,5 +1,7 @@
 <?php
 
+ini_set('default_charset', 'utf-8');
+
 include '../../config/conection.php';
 $consulta = $conn->query("SELECT * FROM so ORDER BY idSO");
 

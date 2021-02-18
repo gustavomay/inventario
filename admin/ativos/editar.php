@@ -1,5 +1,9 @@
 <?php
+
+ini_set('default_charset', 'utf-8');
+
 include '../../config/conection.php';
+
 $id = filter_input(INPUT_GET, 'idativos', FILTER_SANITIZE_NUMBER_INT);
 
 ?>

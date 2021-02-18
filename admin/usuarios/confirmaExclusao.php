@@ -1,4 +1,5 @@
 <html>
+
 <!-- Última versão CSS compilada e minificada -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!-- Tema opcional -->
@@ -18,6 +19,9 @@
 </html>
 
 <?php
+
+ini_set('default_charset', 'utf-8');
+
 include '../../config/conection.php';
 
 $id = $_POST['idusuarios'];
@@ -35,7 +39,7 @@ while ($usuario = $consulta->fetch(PDO::FETCH_ASSOC)) {
     echo '<div id=imageAlert name=imageAlert></div>';
     echo '<form method=POST action=excluir.php>';
     echo '</br>';
-    echo '<h4>Deseja realmente excluir o usuário <b>'.$user.'</b></h4>';
+    echo '<h4>Deseja realmente excluir o usuário <b>'.$user.'?</b></h4>';
     echo '<label>ID:</label><input type="text" name="idusuarios" id="idusuarios" value='.$id.' size="1" readonly="readonly">';
     echo '</br>';
     echo '<button type="submit" class="btn btn-success">Sim</button>';

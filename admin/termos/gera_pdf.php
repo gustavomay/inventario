@@ -1,5 +1,7 @@
 <?php
 
+ini_set('default_charset', 'utf-8');
+
 /* Carrega a classe DOMPdf */
 require_once("../../dompdf/dompdf/dompdf_config.inc.php");
 

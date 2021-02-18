@@ -1,5 +1,7 @@
 <?php
 
+ini_set('default_charset', 'utf-8');
+
 include '../../config/conection.php';
 $consulta = $conn->query("SELECT us.nome, us.sobrenome, at.idativos, at.patrimonio, at.service_tag, at.memoria, at.processador, at.fabricante, at.status, sistema.versao_so, of.versao_office, of.key_office, se.nome_setor, at.tipo						
     FROM usuarios as us				

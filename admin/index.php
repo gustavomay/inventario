@@ -1,4 +1,7 @@
 <?php
+
+ini_set('default_charset', 'utf-8');
+
 include '../config/conection.php';
 
 $consulta1 = $conn->query("SELECT COUNT(idSO) as Total_so FROM so");
@@ -32,7 +35,7 @@ $office = $consulta4->fetch(PDO::FETCH_ASSOC);
 
 <script src="../js/script.js"></script>
 <link href="../css/style.css" rel="stylesheet">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width">
 
 <html>
@@ -72,7 +75,8 @@ $office = $consulta4->fetch(PDO::FETCH_ASSOC);
 
 <title>TI003 - Inventário de Ativos - Peccin S.A</title>
     <head>  
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
         <div id="cabecalho">           
             <table id="table_cabecalho">
                 <tr>
